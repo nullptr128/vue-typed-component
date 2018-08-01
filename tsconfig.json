@@ -11,7 +11,7 @@
     ],
     "inlineSourceMap": true,
     "declaration": true,
-    "strict": true,
+    "strict": false,
     "allowSyntheticDefaultImports": true
   },
   "include": [

@@ -11,7 +11,7 @@ export type VueClass<T> = {
 /*
  * Mapped types
  */
-export type PropsDefinition<PropKeys extends string> = { [K in PropKeys]: PropValidator<any> };
+export type PropsDefinition<PropKeys extends string | number | symbol> = { [K in PropKeys]: PropValidator<any> };
 
 export interface EventsObject<Events> {
     emit: <K extends keyof Events>(event: K, arg: Events[K]) => any;
